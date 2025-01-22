@@ -1,31 +1,45 @@
 
 # GRT Associatif
 
-## FrontEnd Angular
-[Site en ligne](https://grt-associatif.fr/)
+### Contexte du projet
+
+Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m'a amené à développer, pour l'événement des 14, 15 et 16 février 2025, un site web ainsi qu'une API permettant de suivre les statistiques de l'événement. Cela contribue également à offrir davantage de visibilité aux streamers participants, diffusant en direct sur la plateforme Twitch.
+
+### Objectifs du projet  
+- ✔️ Fournir un lien vers la page de dons.
+- ✔️ Centraliser la liste des streamers de l'événement sur une seule et même plateforme accessible à toutes et à tous.  
+- ✔️ Permettre un suivi en direct de la cagnotte des dons.  
+- ✔️ Mettre en avant notre sponsor.
+
+## Stack Technique
+
+**Front end :**  
+- **Framework :** Angular
+- **Stack :** Typescript / HTML / CSS / tailwind
+
+**Serveur :**  
+- **Langage :** Java 17  
+- **Framework :** Spring Boot  
+- **Réactivité :** Java WebFlux (SSE)
+
+
+## FrontEnd 
+[Site](https://grt-associatif.fr/)
 
 ---
 
 ## API
 Cette API répond à trois objectifs principaux :
 
-1. Récupérer les données des streamers en ligne via l'API de Twitch.
-2. Récupérer les donations et le montant de la cagnotte via l'API StreamLabs.
+1. Récupérer les données des streamers en ligne via l'API de Twitch. [api twitch](https://dev.twitch.tv/docs/api/reference/#get-streams)
+
+2. Récupérer les donations et le montant de la cagnotte via l'API StreamLabs Charity. [charity](https://streamlabs-charity.readme.io/reference/getting-started-with-your-api)
+
 3. Créer, analyser et redistribuer les informations entre le serveur et le client Angular grâce à une connexion SSE (Server-Sent Events).
 
 ---
 
-## Stack Technique
-
-**Serveur :**  
-- **Langage :** Java 17  
-- **Framework :** Spring Boot  
-- **Réactivité :** Java WebFlux  
-
----
-
 ## Variables d'environnement
-
 Vous devez obtenir ces clés lors de l'enregistrement de votre application sur le site [Twitch Developer API](https://dev.twitch.tv/).
 
 - `TWITCH_CLIENT_ID`
@@ -60,7 +74,7 @@ docker run \
 GET /connect
 ```
 
-| Retour                     | Type     |  
+| Contenue                     | Type     |  
 |----------------------------|----------| 
 | Tableau de streamers + donations | Flux SSE |
 
@@ -70,17 +84,17 @@ GET /connect
 
 ### Système SSE
 
-1. [**Controller SSE**](https://github.com/Szczapa/Event_Api/blob/TestLogg/src/main/java/com/example/grt3api/controller/SSEController.java)  
+1. [**Controller SSE**](https://github.com/Szczapa/GrtAssociatif/blob/master/GrtApi/src/main/java/com/example/grt3api/controller/SSEController.java)  
    Endpoint principal pour la connexion au système SSE.
 
-2. [**StreamerCache**](https://github.com/Szczapa/Event_Api/blob/TestLogg/src/main/java/com/example/grt3api/utils/StreamerCache.java)  
+2. [**StreamerCache**](https://github.com/Szczapa/GrtAssociatif/blob/master/GrtApi/src/main/java/com/example/grt3api/utils/StreamCache.java)  
    Gestion des données avant transfert via le flux SSE.
 
 ---
 
 ### API Twitch
 
-1. [**TwitchService**](https://github.com/Szczapa/Event_Api/blob/TestLogg/src/main/java/com/example/grt3api/service/TwitchService.java)  
+1. [**TwitchService**](https://github.com/Szczapa/GrtAssociatif/blob/master/GrtApi/src/main/java/com/example/grt3api/service/TwitchService.java)  
    - Gestion des tokens d'authentification.  
    - Requêtes pour récupérer les informations des streamers.
 
@@ -88,14 +102,14 @@ GET /connect
 
 ### API StreamLabs
 
-1. [**StreamLabsService**](https://github.com/Szczapa/Event_Api/blob/TestLogg/src/main/java/com/example/grt3api/service/StreamlabsService.java)  
+1. [**StreamLabsService**](https://github.com/Szczapa/GrtAssociatif/blob/master/GrtApi/src/main/java/com/example/grt3api/service/StreamlabsService.java)  
    Récupération des informations relatives aux donations sur la page de l'événement.
 
 ---
 
 ### Gestion des Tâches
 
-1. [**ScheduleTasks**](https://github.com/Szczapa/Event_Api/blob/TestLogg/src/main/java/com/example/grt3api/utils/ScheduleTasks.java)  
+1. [**ScheduleTasks**](https://github.com/Szczapa/GrtAssociatif/blob/master/GrtApi/src/main/java/com/example/grt3api/utils/ScheduleTasks.java)  
    Automatisation des tâches pour la récupération des données toutes les 45 secondes.
 
 ---

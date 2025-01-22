@@ -1,7 +1,12 @@
 
-# API GRT Associatif
+# GRT Associatif
 
+## FrontEnd Angular
+[Site en ligne](https://grt-associatif.fr/)
 
+---
+
+## API
 Cette API répond à trois objectifs principaux :
 
 1. Récupérer les données des streamers en ligne via l'API de Twitch.

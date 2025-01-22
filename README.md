@@ -18,7 +18,7 @@ Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m
 - **Stack :** Typescript / HTML / CSS / tailwind
 
 **Serveur :**  
-- **Langage :** Java 17  
+- **Stack :** Java 17  
 - **Framework :** Spring Boot  
 - **Réactivité :** Java WebFlux (SSE)
 

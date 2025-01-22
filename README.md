@@ -3,7 +3,7 @@
 
 ### Contexte du projet
 
-Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m'a amené à développer, pour l'événement des 14, 15 et 16 février 2025, un site web ainsi qu'une API permettant de suivre les statistiques de l'événement. Cela contribue également à offrir davantage de visibilité aux streamers participants, diffusant en direct sur la plateforme Twitch.
+Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m'a amené à développer, pour l'événement des **14, 15 et 16 février 2025**, un site web ainsi qu'une API permettant de suivre les statistiques de l'événement. Cela contribue également à offrir davantage de visibilité aux streamers participants, diffusant en direct sur la plateforme Twitch.
 
 ### Objectifs du projet  
 - ✔️ Fournir un lien vers la page de dons.

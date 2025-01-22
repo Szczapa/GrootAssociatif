@@ -25,7 +25,8 @@ Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m
 - **Stack :** Java 17  
 - **Framework :** Spring Boot  
 - **Réactivité :** Java WebFlux (SSE)
-![image](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+
+  ![image](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 
 ## FrontEnd 
 [Site](https://grt-associatif.fr/)

@@ -17,11 +17,15 @@ Membre engagé dans la vie associative depuis maintenant 4 ans, cette aventure m
 - **Framework :** Angular
 - **Stack :** Typescript / HTML / CSS / tailwind
 
+  ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![image](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+
 **Serveur :**  
 - **Stack :** Java 17  
 - **Framework :** Spring Boot  
 - **Réactivité :** Java WebFlux (SSE)
-
+![image](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 
 ## FrontEnd 
 [Site](https://grt-associatif.fr/)

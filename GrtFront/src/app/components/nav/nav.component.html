@@ -1,0 +1,21 @@
+<nav #navBar class="navbar sm:pt-2.5 " [ngClass]="{'navbar-active': isNavActive()}">
+  <div class="logo">
+    <a href="/">
+      <img src="assets/images/logo_grt.png" alt="Logo GRT" height="50" width="200" loading="lazy">
+    </a>
+  </div>
+  <ul #navLinks class="nav-links" [ngClass]="{'nav-active': isNavActive()}">
+    <li><a href="#association" (click)="activeBurger()">L'association rêve</a></li>
+    <li><a href="#stat" (click)="activeBurger()">Event en cours</a></li>
+    <li><a href="#streamer" (click)="activeBurger()">Nos Streamers</a></li>
+    <li><a href="#histoire" (click)="activeBurger()">Notre Histoire</a></li>
+    <li><a href="https://streamlabscharity.com/teams/@grt/grt-reborn-3?member=263708485164863488&l=fr-FR"  target="_blank" (click)="activeBurger()">Faire un don</a></li>
+  </ul>
+
+  <div #burger (click)="activeBurger()" class="burger" [ngClass]="{'toggle': isNavActive()}">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+
+</nav>

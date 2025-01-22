@@ -1,0 +1,25 @@
+#association{
+  background: linear-gradient(90deg, rgba(13, 12, 53, 0.75) 0%, rgba(254,0,142,0.85) 44%, rgba(0,56,145,0.85) 100%);
+  max-width: 100vw;
+}
+
+#association h2{
+
+}
+
+#association img{
+  height: 200px;
+  width: auto;
+/*   shadow blanche derrière la fleur*/
+  filter: drop-shadow(0 0 20px white);
+}
+
+.text-presentation{
+  font-size: .85rem;
+}
+
+@media  screen and (max-width: 768px) {
+  #association{
+    background: linear-gradient(180deg, rgba(13, 12, 53, 0.75) 0%, rgba(254,0,142,0.85) 44%, rgba(0,56,145,0.85) 100%);
+  }
+}

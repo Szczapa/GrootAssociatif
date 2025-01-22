@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font: 'Inter', sans-serif;
+  --bg-color: #f5e5d3;
+  --primary: #A4D4B4;
+  --secondary: #823d83;
+  --tertiary: #3B1C32;
+  --text-color: #f8f8f8;
+}
+
+
+html, body {
+  height: 100%; /* S'assurer que body et html occupent toute la hauteur */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Désactiver le défilement global */
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Masquer la barre de défilement pour WebKit (Chrome, Safari) */
+}
+
+.no-scroll {
+  overflow: hidden;
+}

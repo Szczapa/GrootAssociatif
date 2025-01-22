@@ -1,0 +1,23 @@
+#stat{
+  min-height: 10rem;
+}
+
+.text-pink{
+  color: #D30481;
+}
+
+dt{
+  font-family: "Roboto Condensed" , sans-serif;
+  letter-spacing: -0.25px;
+  font-weight: bold;
+}
+
+.bg-blue{
+  background-color: rgba(11, 63, 153, 0.53);
+}
+@media  screen and (max-width: 768px) {
+  #stat{
+    margin-bottom: 20px;
+  }
+
+}
